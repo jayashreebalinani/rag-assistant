@@ -1,0 +1,20 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Built at deploy time by ingest.py
+backend/chroma_db/
+
+# Node / Next.js (frontend/.gitignore covers the rest)
+node_modules/
+.next/
+
+# OS
+.DS_Store

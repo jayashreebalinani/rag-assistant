@@ -1,0 +1,247 @@
+{
+  "model": "openai/gpt-oss-120b",
+  "summary": {
+    "overall": 0.75,
+    "total": 16,
+    "by_type": {
+      "simple": {
+        "accuracy": 0.75,
+        "total": 4
+      },
+      "multi": {
+        "accuracy": 1.0,
+        "total": 4
+      },
+      "refuse": {
+        "accuracy": 0.75,
+        "total": 4
+      },
+      "paraphrase": {
+        "accuracy": 0.5,
+        "total": 4
+      }
+    }
+  },
+  "results": [
+    {
+      "id": "s1",
+      "type": "simple",
+      "correct": true,
+      "best_distance": 1.199,
+      "reason": "Matches expected 12 days per calendar year",
+      "question": "How many sick leaves do I get per year?",
+      "expected_answer": "12 days of sick leave per calendar year.",
+      "actual_answer": "Employees receive **12 days of sick leave per calendar year**【1, page 1】.",
+      "source_pages": [
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "simple",
+      "correct": true,
+      "best_distance": 0.928,
+      "reason": "Matches expected 90 days notice period for Senior Engineer and above",
+      "question": "What is the notice period for a Senior Engineer?",
+      "expected_answer": "90 days for Senior Engineer level and above.",
+      "actual_answer": "The notice period for a Senior Engineer (and above) is **90 days** [1, page 3].",
+      "source_pages": [
+        3,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "s3",
+      "type": "simple",
+      "correct": true,
+      "best_distance": 1.092,
+      "reason": "Matches expected amount, items, one-time nature, and 90‑day claim window",
+      "question": "How much is the home office allowance?",
+      "expected_answer": "A one-time allowance of ₹8,000 for a chair, desk or monitor, claimable within 90 days of eligibility.",
+      "actual_answer": "The home office allowance is a one‑time amount of ₹ 8,000 for chair, desk, or monitor purchases (claimable within 90 days of eligibility) [1, page 2].",
+      "source_pages": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "simple",
+      "correct": false,
+      "best_distance": 0.834,
+      "reason": "Missing the extension detail of up to 3 months",
+      "question": "How long is the probation period?",
+      "expected_answer": "6 months, which can be extended once by up to 3 months.",
+      "actual_answer": "The probation period is **6 months** for all new employees【1, page 3】【2, page 3】.",
+      "source_pages": [
+        3,
+        3,
+        1
+      ]
+    },
+    {
+      "id": "m1",
+      "type": "multi",
+      "correct": true,
+      "best_distance": 1.31,
+      "reason": "Matches expected answer",
+      "question": "Can I work from home in my first month?",
+      "expected_answer": "No. Work from home (up to 2 days per week) is only allowed after completing the 6-month probation period; employees on probation are not eligible for remote work.",
+      "actual_answer": "No. Employees are only allowed to work from home up to 2 days per week after they have completed their 6‑month probation period [1, page 2]. Since your first month is still within the probation period, you cannot work from home yet.",
+      "source_pages": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "id": "m2",
+      "type": "multi",
+      "correct": true,
+      "best_distance": 0.654,
+      "reason": "Matches both notice period and settlement timing details",
+      "question": "If I resign during probation, how long is my notice period and when will I get my final settlement?",
+      "expected_answer": "The notice period is 30 days during probation, and final settlement is processed within 45 days of the last working day after all company assets are returned.",
+      "actual_answer": "If you resign while you are still on probation, your notice period is **30 days** [1, page 3].  \n\nYour **final settlement will be processed within 45 days of your last working day**, provided you have returned all company assets such as laptop, ID card and access card [1, page 3].",
+      "source_pages": [
+        3,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "m3",
+      "type": "multi",
+      "correct": true,
+      "best_distance": 0.998,
+      "reason": "All key facts match the expected answer; extra detail does not contradict.",
+      "question": "I'm travelling to a metro city for work. What is the hotel limit, the meal limit, and how long do I have to submit the claim?",
+      "expected_answer": "Hotels up to ₹5,000 per night in metro cities, meals up to ₹1,200 per day with receipts, and the claim must be submitted within 30 days of spending.",
+      "actual_answer": "- **Hotel limit for metro cities:** Up to **₹ 5,000 per night** [1, page 2].  \n- **Meal limit while traveling:** Up to **₹ 1,200 per day** (receipts required) [1, page 2].  \n- **Claim submission deadline:** All business expenses must be submitted **within 30 days of spending**; claims after 30 days are rejected unless you have written approval from the Finance Head [1, page 2] [2, page 2].",
+      "source_pages": [
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m4",
+      "type": "multi",
+      "correct": true,
+      "best_distance": 0.48,
+      "reason": "Provides the same total, breakdown, and carry‑forward rules as expected",
+      "question": "How many casual and sick leave days do I get in total per year, and which of them can be carried forward?",
+      "expected_answer": "22 days in total: 10 casual and 12 sick. Casual leave cannot be carried forward; unused sick leave can be carried forward up to 24 days.",
+      "actual_answer": "You receive **10 days of casual leave** per calendar year, credited each month — and **12 days of sick leave** per calendar year — giving you a combined total of **22 leave days** each year [1, page 1].\n\n- **Casual leave** cannot be carried forward to the next year and cannot be encashed [1, page 1].\n- **Sick leave** may be carried forward, but only up to a maximum of **24 days** [1, page 1].",
+      "source_pages": [
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "p1",
+      "type": "paraphrase",
+      "correct": false,
+      "best_distance": 1.61,
+      "reason": "The answer does not state that a doctor's note is required; it says the information couldn't be found.",
+      "question": "If I'm unwell for three days in a row, do I need a doctor's note?",
+      "expected_answer": "Yes. A medical certificate is required for sick leave of more than 2 consecutive days.",
+      "actual_answer": "I couldn't find this in the HR policy.",
+      "source_pages": []
+    },
+    {
+      "id": "p2",
+      "type": "paraphrase",
+      "correct": true,
+      "best_distance": 0.936,
+      "reason": "Matches expected 10 working days paid leave within 3 months",
+      "question": "How many days off do new dads get when their baby is born?",
+      "expected_answer": "10 working days of paid paternity leave, to be used within 3 months of the child's birth.",
+      "actual_answer": "Male employees are entitled to 10 working days of paid paternity leave, which must be taken within 3 months of the child’s birth【1, page 2】.",
+      "source_pages": [
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "p3",
+      "type": "paraphrase",
+      "correct": false,
+      "best_distance": 1.531,
+      "reason": "Actual answer does not provide the expected policy detail about half a day casual leave",
+      "question": "What happens if I keep showing up after quarter past ten?",
+      "expected_answer": "Arriving after 10:15 AM more than three times in a calendar month counts as half a day of casual leave.",
+      "actual_answer": "I couldn't find this in the HR policy.",
+      "source_pages": []
+    },
+    {
+      "id": "p4",
+      "type": "paraphrase",
+      "correct": true,
+      "best_distance": 1.209,
+      "reason": "Matches the required 24‑hour reporting timeframe",
+      "question": "My company laptop got stolen. How quickly do I have to tell someone?",
+      "expected_answer": "Lost or stolen laptops must be reported to IT within 24 hours.",
+      "actual_answer": "You must report a lost or stolen laptop to IT within 24 hours [1, page 3].",
+      "source_pages": [
+        3,
+        3,
+        2
+      ]
+    },
+    {
+      "id": "r1",
+      "type": "refuse",
+      "correct": true,
+      "best_distance": 1.515,
+      "reason": "Refused with no sources.",
+      "question": "What is the company dress code?",
+      "expected_answer": "Refuse: the policy does not cover a dress code.",
+      "actual_answer": "I couldn't find this in the HR policy.",
+      "source_pages": []
+    },
+    {
+      "id": "r2",
+      "type": "refuse",
+      "correct": false,
+      "best_distance": 1.411,
+      "reason": "Refused, but returned 3 sources.",
+      "question": "Does the company pay for gym memberships?",
+      "expected_answer": "Refuse: the policy does not mention gym memberships.",
+      "actual_answer": "I couldn't find that in the policy.",
+      "source_pages": [
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "id": "r3",
+      "type": "refuse",
+      "correct": true,
+      "best_distance": 1.97,
+      "reason": "Refused with no sources.",
+      "question": "What is the capital of France?",
+      "expected_answer": "Refuse: unrelated to the HR policy.",
+      "actual_answer": "I couldn't find this in the HR policy.",
+      "source_pages": []
+    },
+    {
+      "id": "r4",
+      "type": "refuse",
+      "correct": true,
+      "best_distance": 1.599,
+      "reason": "Refused with no sources.",
+      "question": "When is the annual salary appraisal and how big are raises?",
+      "expected_answer": "Refuse: the policy does not cover appraisals or salary raises.",
+      "actual_answer": "I couldn't find this in the HR policy.",
+      "source_pages": []
+    }
+  ]
+}

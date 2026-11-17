@@ -1,0 +1,98 @@
+[
+  {
+    "id": "s1",
+    "type": "simple",
+    "question": "How many sick leaves do I get per year?",
+    "expected_answer": "12 days of sick leave per calendar year."
+  },
+  {
+    "id": "s2",
+    "type": "simple",
+    "question": "What is the notice period for a Senior Engineer?",
+    "expected_answer": "90 days for Senior Engineer level and above."
+  },
+  {
+    "id": "s3",
+    "type": "simple",
+    "question": "How much is the home office allowance?",
+    "expected_answer": "A one-time allowance of ₹8,000 for a chair, desk or monitor, claimable within 90 days of eligibility."
+  },
+  {
+    "id": "s4",
+    "type": "simple",
+    "question": "How long is the probation period?",
+    "expected_answer": "6 months, which can be extended once by up to 3 months."
+  },
+  {
+    "id": "m1",
+    "type": "multi",
+    "question": "Can I work from home in my first month?",
+    "expected_answer": "No. Work from home (up to 2 days per week) is only allowed after completing the 6-month probation period; employees on probation are not eligible for remote work."
+  },
+  {
+    "id": "m2",
+    "type": "multi",
+    "question": "If I resign during probation, how long is my notice period and when will I get my final settlement?",
+    "expected_answer": "The notice period is 30 days during probation, and final settlement is processed within 45 days of the last working day after all company assets are returned."
+  },
+  {
+    "id": "m3",
+    "type": "multi",
+    "question": "I'm travelling to a metro city for work. What is the hotel limit, the meal limit, and how long do I have to submit the claim?",
+    "expected_answer": "Hotels up to ₹5,000 per night in metro cities, meals up to ₹1,200 per day with receipts, and the claim must be submitted within 30 days of spending."
+  },
+  {
+    "id": "m4",
+    "type": "multi",
+    "question": "How many casual and sick leave days do I get in total per year, and which of them can be carried forward?",
+    "expected_answer": "22 days in total: 10 casual and 12 sick. Casual leave cannot be carried forward; unused sick leave can be carried forward up to 24 days."
+  },
+  {
+    "id": "p1",
+    "type": "paraphrase",
+    "question": "If I'm unwell for three days in a row, do I need a doctor's note?",
+    "expected_answer": "Yes. A medical certificate is required for sick leave of more than 2 consecutive days."
+  },
+  {
+    "id": "p2",
+    "type": "paraphrase",
+    "question": "How many days off do new dads get when their baby is born?",
+    "expected_answer": "10 working days of paid paternity leave, to be used within 3 months of the child's birth."
+  },
+  {
+    "id": "p3",
+    "type": "paraphrase",
+    "question": "What happens if I keep showing up after quarter past ten?",
+    "expected_answer": "Arriving after 10:15 AM more than three times in a calendar month counts as half a day of casual leave."
+  },
+  {
+    "id": "p4",
+    "type": "paraphrase",
+    "question": "My company laptop got stolen. How quickly do I have to tell someone?",
+    "expected_answer": "Lost or stolen laptops must be reported to IT within 24 hours."
+  },
+  {
+    "id": "r1",
+    "type": "refuse",
+    "question": "What is the company dress code?",
+    "expected_answer": "Refuse: the policy does not cover a dress code."
+  },
+  {
+    "id": "r2",
+    "type": "refuse",
+    "question": "Does the company pay for gym memberships?",
+    "expected_answer": "Refuse: the policy does not mention gym memberships."
+  },
+  {
+    "id": "r3",
+    "type": "refuse",
+    "question": "What is the capital of France?",
+    "expected_answer": "Refuse: unrelated to the HR policy."
+  },
+  {
+    "id": "r4",
+    "type": "refuse",
+    "question": "When is the annual salary appraisal and how big are raises?",
+    "expected_answer": "Refuse: the policy does not cover appraisals or salary raises."
+  }
+]

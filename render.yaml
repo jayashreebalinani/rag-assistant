@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: rag-assistant-api
+    runtime: python
+    plan: free
+    rootDir: backend
+    # Render's free disk is wiped on every deploy/restart, so the Chroma index is built here
+    buildCommand: pip install -r requirements.txt && python ingest.py
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.13.18
+      - key: MODEL
+        value: openai/gpt-oss-120b
+      - key: GROQ_API_KEY
+        sync: false # secret: you enter it in the Render dashboard
+      - key: ALLOWED_ORIGINS
+        sync: false # set to your Vercel URL after the frontend is deployed
